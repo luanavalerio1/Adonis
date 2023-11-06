@@ -2,7 +2,7 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from '../../Models/User'
 import UserValidator from '../../Validators/UserValidator'
 
-export default class AuthControllers {
+export default class AuthController {
     
     public async register({request}: HttpContextContract){
         const data = await request.validate(UserValidator)
